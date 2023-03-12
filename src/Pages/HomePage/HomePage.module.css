@@ -1,0 +1,141 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem 0rem 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6vh;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.search h2 {
+  color: #cb3837;
+  font-family: Berlin Sans FB;
+  font-weight: 500;
+}
+
+.header input {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 10px;
+  outline: none;
+  font-family: Berlin Sans FB;
+  border: 4px solid #cb3837;
+  box-shadow: 2px 2px 2px 2px gray;
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+.listHeading h4 {
+  font-family: Berlin Sans FB;
+  color: rgb(116, 116, 116);
+  font-weight: 400;
+}
+.listDiv {
+  height: 30vh;
+  overflow-y: scroll;
+  font-family: Candara;
+  gap: 6rem;
+  background-color: #cb3837;
+  width: 50.5%;
+  border-radius: 10px;
+  padding: 1rem;
+  color: white;
+  font-size: 1.2rem;
+}
+.listDiv::-webkit-scrollbar {
+  display: none;
+}
+
+.btn {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Berlin Sans FB;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 48px;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px -12px #ffffff;
+  z-index: 1;
+  width: fit-content;
+  height: 7vh;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  border-radius: 48px;
+  background-image: linear-gradient(to right, #cb3837 0%, #c5c5c5 100%);
+  transition: 0.5s ease;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: #cb3837;
+  font-weight: 00;
+}
+
+.link:hover {
+  color: #ffffff;
+}
+
+.package{
+    display: flex;
+    gap: 1rem;
+}
+
+.submitText {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 2vw;
+  top: 40vh;
+}
+
+.submitText h4 {
+  font-family: Berlin Sans FB;
+  color: rgb(116, 116, 116);
+  font-weight: 400;
+}
+
+.submitText TextArea {
+  border: 4px solid #cb3837;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-family: Berlin Sans FB;
+  color: rgb(116, 116, 116);
+  margin-right: 1rem;
+}
+.submitText TextArea:focus {
+  outline: none;
+}
+
+.submitBtn {
+  width: fit-content;
+  padding: 0.5rem;
+  background-color: #cb3837;
+  color: white;
+  font-family: Berlin Sans FB;
+  border-radius: 10px;
+  border: none;
+}
